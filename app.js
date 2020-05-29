@@ -5,7 +5,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-res.send('this is the homepage');
+res.sendFile(__dirname + "/HTML/homepage.html");
 
 });
 
