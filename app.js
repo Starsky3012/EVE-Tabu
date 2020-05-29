@@ -11,7 +11,7 @@ res.sendFile(__dirname + "/assets/HTML/homepage.html");
 });
 
 app.use('/', express.static(path.join(__dirname,'assets','html')));
-app.use('/', express.static(path.join(__dirname,'assets','pictures')));
+
 //app.use('/assets', express.static(path.join(__dirname,'assets')));
 
 app.get('/player/:gamesession', function(req, res){
