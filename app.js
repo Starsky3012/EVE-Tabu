@@ -10,7 +10,7 @@ res.sendFile(__dirname + "/assets/HTML/homepage.html");
 
 });
 
-app.use('/', express.static(path.join(__dirname,'assets','HTML')));
+app.use('/', express.static(path.join(__dirname,'assets')));
 
 //app.use('/assets', express.static(path.join(__dirname,'assets')));
 
