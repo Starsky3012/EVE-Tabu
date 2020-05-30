@@ -71,4 +71,6 @@ h1{
   text-align: center;
   background: linear-gradient(to right, #485563, #29323c);
   background-color: rgba(0, 0, 0, 0);
+  margin: 20px;
+  border: 1px solid darkgoldenrod;
 }
