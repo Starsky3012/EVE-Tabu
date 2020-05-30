@@ -1,6 +1,7 @@
 function createGame(){
   if(checkName()){
-    document.getElementById('errorMsg').innerHTML="You have to provide a name"
+    document.getElementById('errorMsg').innerHTML="You have to provide a name";
+    console.log('Name missing');
     return;
   }
 
@@ -14,10 +15,12 @@ function createGame(){
 function joinGame(){
   if(checkName()){
     document.getElementById('errorMsg').innerHTML="You have to provide a name";
+    console.log('Name missing');
     return;
   }
   if(checkID()){
     document.getElementById('errorMsgID').innerHTML="You have to provide a game ID";
+    console.log('ID missing');
     return;
   }
 }
