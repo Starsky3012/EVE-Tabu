@@ -18,4 +18,9 @@ res.send('You just joined game session: ' + req.params.gamesession);
 
 });
 
+app.get('/host/:gamesession', function(req, res){
+res.send('You just joined game session: ' + req.params.gamesession);
+
+});
+
 app.listen(3000);
