@@ -14,6 +14,7 @@
     </div>
 
     <div id="grid">
+
       <div id="chat">
         <div id="chat-window">
           <div id="output"></div>
@@ -22,7 +23,8 @@
           <input class="chat-input" id="message" type="text" placeholder="Message" />
           <button>Send</button>
         </div>
-        <div id="gamemaster">
+
+
           <div id="playerSelection">
             <select id="playerSelectField" size="5">
               <option>A name</option>
@@ -31,9 +33,30 @@
             <button>Select</button>
           </div>
           <div id="wordSelection">
-            
+            <table class="center">
+              <tr id="wordDisplay">
+                <td>
+                  <p id="word">The word</p>
+                  <ul>
+                    <li>A restriction</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr ="wordBttns">
+                <td>
+                  <button>New Word</button>
+                  <button>Send Word</button>
+                  <p id="selectedPlayer">Selected Player:</p>
+                </td>
+              </tr>
+            </table>
           </div>
-        </div>
+          <div class="center" id="wordStatus">
+            <button>Word explained</button>
+            <button>Word failed</button>
+            <p>Player timer: </p>
+          </div>
+<!--End of the grid, the next div closes it -->
       </div>
     </div>
   </div>
