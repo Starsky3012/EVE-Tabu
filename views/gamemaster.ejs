@@ -16,17 +16,19 @@
     <div id="grid">
 
       <%- include('chat.ejs') %>
+          <div class="center">
+            <p>Your name: <%= user.name %></p>
+          </div>
 
-
-          <div id="playerSelection">
+          <div class="center" id="playerSelection">
             <select id="playerSelectField" size="5">
               <option>A name</option>
               <option>Another namefield</option>
             </select>
             <button>Select</button>
           </div>
-          <div id="wordSelection">
-            <table class="center">
+          <div class="center" id="wordSelection">
+            <table>
               <tr id="wordDisplay">
                 <td>
                   <p id="word">The word</p>
