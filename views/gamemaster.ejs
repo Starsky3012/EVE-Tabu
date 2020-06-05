@@ -3,29 +3,62 @@
     <title>EVE-Taboo - You're the gamemaster</title>
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="../css/stylesheet.css">
+    <link id="theme-style" rel="stylesheet" href="../HTML/CSS/stylesheet.css">
 
 </head>
 <body>
-  <div id="wrapper">
+  <div id="container">
     <div class="center" id="banner">
       <h1>- Stranger Danger - </br>
         EVE-Taboo</h1>
     </div>
-    <div id="chat">
-      <div id="chat-window">
+
+    <div id="grid">
+
+      <div id="chat">
+        <div id="chat-window">
           <div id="output"></div>
           <div id="feedback"></div>
+        </div>
+          <input class="chat-input" id="message" type="text" placeholder="Message" />
+          <button>Send</button>
+        </div>
+
+
+          <div id="playerSelection">
+            <select id="playerSelectField" size="5">
+              <option>A name</option>
+              <option>Another namefield</option>
+            </select>
+            <button>Select</button>
+          </div>
+          <div id="wordSelection">
+            <table class="center">
+              <tr id="wordDisplay">
+                <td>
+                  <p id="word">The word</p>
+                  <ul>
+                    <li>A restriction</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr ="wordBttns">
+                <td>
+                  <button>New Word</button>
+                  <button>Send Word</button>
+                  <p id="selectedPlayer">Selected Player:</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="center" id="wordStatus">
+            <button>Word explained</button>
+            <button>Word failed</button>
+            <p>Player timer: </p>
+          </div>
+<!--End of the grid, the next div closes it -->
       </div>
-      <input class="chat-input" id="message" type="text" placeholder="Message" />
     </div>
-    <div id="gamemaster">
-      <div id="playerSelection"></div>
-      <div id="wordSelection"></div>
-  </div>
-
-    </div>
-
   </div>
 </body>
 </html>

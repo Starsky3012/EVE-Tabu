@@ -1,6 +1,6 @@
 var express = require('express');
 const path = require('path');
-var bodyParser = require('body-parser');
+var socket = require('socket.io');
 var routeController = require('./controllers/routeController');
 
 var app = express();
@@ -17,4 +17,10 @@ app.use('/', express.static(path.join(__dirname,'assets')));
 
 routeController(app);
 
-//listening to port
+//Socket setup
+var io = socket(server);
+
+io.on('connection', function(socket){
+  console.log('made socket connection');
+
+})

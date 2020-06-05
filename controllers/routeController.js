@@ -5,4 +5,9 @@ module.exports = function(app){
 
   });
 
+  app.get('/:sessionID/gamemaster', function(req, res){
+  res.render('gamemaster.ejs')
+
+  });
+
 }
