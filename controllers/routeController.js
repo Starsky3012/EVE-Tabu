@@ -1,7 +1,7 @@
 module.exports = function(app){
 
   app.get('/', function(req, res){
-  res.sendFile(__dirname + "/assets/HTML/homepage.html");
+  res.render('homepage.ejs')
 
   });
 
