@@ -22,19 +22,23 @@
     The words you'll have to describe in our variant mainly revolve around EVE Online. </br>
     If you create a new game session you'll automatically be the game master and be the one who gets to decide who will be next.
   </p></div>
+
   <form id="form" method="POST" action="/gamemaster">
     <div class="center" id="playerName">
-      <label for="namefield">Set your name</label>
+      <label>Set your name</label>
       <input id="namefield" name="name" type="text" placeholder="Enter your name here"></input>
       <span id="errorMsg"></span>
-      <input type="submit" value="Create a new game"></input>
+      <input id="newGameInput" type="submit" value="Create a new game"></input>
     </div>
   </form>
-    <div class="center" id="divJoinGame">
-      <input id="sessionfield" name="sessionfield" type="text" placeholder="Enter game id"></input>
-      <span id="errorMsgID"></span>
-      <button onclick="joinGame()" id="bttnJoinGame">Join an existing game session</button>
-    </div>
+
+    <form id="playerform" method="post" action="/player">
+      <div class="center" id="divJoinGame">
+        <input id="sessionfield" name="sessionfield" type="text" placeholder="Enter game id"></input>
+        <span id="errorMsgID"></span>
+        <input id="joinGameInput" type="submit" value="Join an existing game session"></input>
+      </div>
+    </form>
 
 </body>
 </html>

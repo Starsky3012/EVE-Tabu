@@ -17,9 +17,14 @@ module.exports = function(app){
   res.render('gamemaster.ejs', {user: data});
 
   });
-
+  //route zum testen
   app.post('/gamemaster', function(req, res){
   res.render('gamemaster.ejs', {user: data});
+
+  });
+  //route zum testen
+  app.post('/player', function(req, res){
+  res.render('player.ejs', {user: data});
 
   });
 
