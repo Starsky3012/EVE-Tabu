@@ -7,13 +7,31 @@
 
 </head>
 <body>
-  <div class="center" id="banner">
-    <h1>- Stranger Danger - </br>
-      EVE-Taboo</h1>
-  </div>
-  <%- include('chat.ejs') %>
-  <div id="player">
-    <div id="word"></div>
-  </div>
+
+    <div class="center" id="banner">
+      <h1>- Stranger Danger - </br>
+        EVE-Taboo</h1>
+    </div>
+    <div id="grid">
+    <%- include('chat.ejs') %>
+    <div id="player">
+      <div class="center" id="word">
+        <p>Your word is: DUMMY-WORD</p>
+        <p>You're not allowed to use the following words:</p>
+        <ul>
+          <li>Word1</li>
+          <li>Word2</li>
+          <li>Word3</li>
+          <li>Word4</li>
+          <li>Word5</li>
+        </ul>
+        <button id="explainedBttn">word explained</button>
+      </div>
+    </div>
+    <div class="center">
+      <button>leave game</button>
+      <p>Timer: </p>
+    </div>
+</div>
 </body>
 </html>

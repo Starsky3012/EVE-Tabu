@@ -17,16 +17,6 @@ module.exports = function(app){
   res.render('gamemaster.ejs', {user: data});
 
   });
-  //route zum testen
-  app.post('/gamemaster', function(req, res){
-  res.render('gamemaster.ejs', {user: data});
-
-  });
-  //route zum testen
-  app.post('/player', function(req, res){
-  res.render('player.ejs', {user: data});
-
-  });
 
   //handler fuer das starten eines Spiels
 
@@ -34,4 +24,20 @@ module.exports = function(app){
     console.log(req.body);
   });
 
+  //Anfang der test-routes
+  app.post('/gamemaster', function(req, res){
+  res.render('gamemaster.ejs', {user: data});
+
+  });
+
+  app.post('/player', function(req, res){
+  res.render('player.ejs', {user: data});
+
+  });
+
+  app.get('/player', function(req, res){
+  res.render('player.ejs', {user: data});
+
+  });
+  //Ende der test-routes
 }

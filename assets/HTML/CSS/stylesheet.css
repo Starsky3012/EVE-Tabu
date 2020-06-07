@@ -102,6 +102,11 @@ table{
   align-items: center;
 }
 
+#explainedBttn{
+  height: 40px;
+  width: 160px;
+}
+
 .center {
   text-align: center;
   background: linear-gradient(to right, #485563, #29323c);
