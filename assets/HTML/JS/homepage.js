@@ -1,3 +1,15 @@
+//warten auf das Laden der DOM um dann das Element per ID zu finden
+document.addEventListener('DOMContentLoaded', function(event){
+  document.getElementById('form').onclick = function(){
+    console.log("Ich wurde geclickt");
+    return !checkName();
+  }
+
+})
+
+
+
+
 function createGame(){
   if(checkName()){
     document.getElementById('errorMsg').innerHTML="You have to provide a name";

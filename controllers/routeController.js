@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
 //dummy-data
-var data = {"name": "Collin"};
+var data = {"name": "Dummy-name"};
 
 module.exports = function(app){
   //routing fuer die homepage
